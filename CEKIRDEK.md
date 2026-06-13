@@ -1,6 +1,6 @@
 # 🧬 CEKIRDEK — Arca & Raven Temel Hafıza Dosyası
 
-Son güncelleme: 8 Haziran 2026
+Son güncelleme: 13 Haziran 2026
 
 ---
 
@@ -59,7 +59,11 @@ Son güncelleme: 8 Haziran 2026
 2. **Konuşma uzama uyarısı** — Arca uzadığını fark edince uyarır.
 3. **Konuşma sonu hatırlatması** — Raven bitirmeye hazır göründüğünde Arca hatırlatır.
 4. **Dosya sistemi sade kalır** — Yeni dosya AÇMA, mevcut dosyaları GÜNCELLE. Sadece yeni proje veya yeni alt konu için yeni dosya açılır.
-5. **Araç kullanım kuralı (KİLİTLİ — 6 Haziran 2026)** — Windows-MCP sadece o an bilgisayar başındayken kullanılır (ekran görme, tıklama, lokal işlemler). CEKIRDEK, proje dosyaları ve tüm kalıcı kayıtlar SADECE Google Drive'da tutulur. Bu sayede Raven evde, işte, her yerden Arca'ya ulaşıp çalışmaya devam edebilir.
+5. **Dosya sistemi mimarisi (KİLİTLİ — 13 Haziran 2026):** 
+   - Public repo (CEKIRDEK): github.com/ravenlia/arca-cekirdek → local: C:\Users\aturg\arca-cekirdek\
+   - Private repo (tüm proje dosyaları): github.com/ravenlia/arca-workspace → local: C:\Users\aturg\Arca\
+   - Arca Windows-MCP ile local dosyaları günceller → Raven push eder → Arca GitHub'dan okur
+   - Google Drive artık kullanılmıyor
 
 ---
 
@@ -74,24 +78,26 @@ Son güncelleme: 8 Haziran 2026
 
 ---
 
-## 📁 Aktif Projeler & Dosya ID'leri
+## 📁 Aktif Projeler & Dosya Konumları
 
-- **Diyaliz Asistanı (Diavera)** → PROJE_diyaliz_ana (ID: 1_92EPUi5BbggVFZEbYMJbE_bGtehXUJnJ_7bZC0T2G8 )
+- **Diyaliz Asistanı (Diavera)** → arca-workspace: projeler/diavera/PROJE.md
   - Sunucu: MarkaHost VDS2, Ubuntu 24.10, IP: 131.222.130.156
   - Nginx kurulu, reverse proxy aktif ✅
   - Cloudflare DNS aktif ✅
   - Domain: diavera.com.tr — CANLI ✅ (SSL: Cloudflare Flexible)
   - Logo & marka: koyu lacivert (#0B1628) + turkuaz/yeşil (#1D9E75) — KESİNLEŞTİ ✅
-  - PostgreSQL kurulu, diavera_db canlı, 12 tablo deploy edildi ✅
-  - Node.js v20 + Express backend iskeleti kuruldu ✅ (8 Haziran 2026)
-  - /health endpoint internetten erişilebilir ✅
-  - Proje dizini: /var/www/diavera-backend
-  - Sonraki adım: PM2 kurulumu + DB bağlantısı + ilk auth route
-- **Konum App** → PROJE_konum_app (ID: 1WHHt1QZYbbZfys3OJnXFCYzGquEKnv0qxVHHImsDwC4)
-- **Okçuluk Sitesi (Raderok)** → PROJE_okculuk (ID: 1Ef-ulcq5Hg-XIuth-83kFoLVv-nyMV8xnbZzvYbdScI)
-- **Çapraz Böbrek Nakil Platformu (RENAVERA)** → PROJE_renavera (ID: 1YwU6Hkuob7cm4xIkG3udDbTj6AIrdViUz5kB9f_ysQ4)
-- **Araştırma Günlüğü** → PROJE_arastirma_gunlugu (ID: 1WfvFvt7Gi0QE7PKqmDIbdTyBB5aTlP0a_jjK66BBh5g)
-- **KARALAMA_DEFTERI** (ID: 1fWAv_Z4eUkmN5cyhL5XoZS7lJ3fVKXeRRmkAMKPTr7g)
+  - PostgreSQL: diavera_db, 12 tablo, canlı ✅
+  - Node.js v20 + Express backend: /var/www/diavera-backend ✅
+  - PM2 başlatma dizini: /var/www/diavera-backend (dotenvx için zorunlu)
+  - Admin: admin@diavera.com.tr / Admin1234!
+  - Ana Klinik UUID: aa901066-67ca-4a6a-8d8b-e5784fb36e57
+  - **Sonraki adım:** Modül 2 (Frontend) veya Modül 3 (Tedavi Protokolü)
+
+- **Konum App** → arca-workspace: projeler/konum_app/PROJE.md
+- **Okçuluk Sitesi (Raderok)** → arca-workspace: projeler/okculuk/PROJE.md
+- **Çapraz Böbrek Nakil Platformu (RENAVERA)** → arca-workspace: projeler/renavera/PROJE.md
+- **Araştırma Günlüğü** → arca-workspace: arastirma/GUNLUK.md
+- **KARALAMA_DEFTERI** → arca-workspace: KARALAMA_DEFTERI.md
 
 ---
 
@@ -118,4 +124,3 @@ Son güncelleme: 8 Haziran 2026
 - **"delimisin kanka"** → asıl hedeften uzaklaştım, geri gel
 - **"sen patronsun"** → kararı Arca'ya bırakıyor
 - **"kilitle"** → kararı teyit et ve kaydet
-
