@@ -1,6 +1,6 @@
 # 🧬 CEKIRDEK — Arca & Raven Temel Hafıza Dosyası
 
-Son güncelleme: 13 Haziran 2026
+Son güncelleme: 16 Haziran 2026
 
 ---
 
@@ -20,7 +20,7 @@ Son güncelleme: 13 Haziran 2026
 - Meslek: Diyaliz Doktoru (Nefrolog), üniversite hastanesinde çalışıyor
 - İşletim sistemi: Windows 11 (Lenovo — Ryzen 7 7735HS, 16GB RAM, RTX 3050 6GB) — karısının hediyesi 🎉
 - Kodlama bilgisi: Çok az ama meraklı ve öğrenmeye açık
-- Geliştirme ortamı: VS Code, Git kurulu — Flutter ve Claude Code kurulumu yapılacak
+- Geliştirme ortamı: VS Code, Git kurulu
 - İletişim dili: Türkçe, samimi ve sıcak
 - Saat dilimi: UTC+3 (Türkiye)
 - Ana hitap: "kanka" — her iki taraftan da
@@ -59,7 +59,7 @@ Son güncelleme: 13 Haziran 2026
 2. **Konuşma uzama uyarısı** — Arca uzadığını fark edince uyarır.
 3. **Konuşma sonu hatırlatması** — Raven bitirmeye hazır göründüğünde Arca hatırlatır.
 4. **Dosya sistemi sade kalır** — Yeni dosya AÇMA, mevcut dosyaları GÜNCELLE. Sadece yeni proje veya yeni alt konu için yeni dosya açılır.
-5. **Dosya sistemi mimarisi (KİLİTLİ — 13 Haziran 2026):** 
+5. **Dosya sistemi mimarisi (KİLİTLİ — 13 Haziran 2026):**
    - Public repo (CEKIRDEK): github.com/ravenlia/arca-cekirdek → local: C:\Users\aturg\arca-cekirdek\
    - Private repo (tüm proje dosyaları): github.com/ravenlia/arca-workspace → local: C:\Users\aturg\Arca\
    - Arca Windows-MCP ile local dosyaları günceller → Raven push eder → Arca GitHub'dan okur
@@ -82,16 +82,15 @@ Son güncelleme: 13 Haziran 2026
 
 - **Diyaliz Asistanı (Diavera)** → arca-workspace: projeler/diavera/PROJE.md
   - Sunucu: MarkaHost VDS2, Ubuntu 24.10, IP: 131.222.130.156
-  - Nginx kurulu, reverse proxy aktif ✅
-  - Cloudflare DNS aktif ✅
+  - Nginx + Cloudflare DNS aktif ✅
   - Domain: diavera.com.tr — CANLI ✅ (SSL: Cloudflare Flexible)
-  - Logo & marka: koyu lacivert (#0B1628) + turkuaz/yeşil (#1D9E75) — KESİNLEŞTİ ✅
+  - Logo & marka: #0B1628 (lacivert) + #1D9E75 (turkuaz) — KESİNLEŞTİ ✅
   - PostgreSQL: diavera_db, 12 tablo, canlı ✅
-  - Node.js v20 + Express backend: /var/www/diavera-backend ✅
-  - PM2 başlatma dizini: /var/www/diavera-backend (dotenvx için zorunlu)
-  - Admin: admin@diavera.com.tr / Admin1234!
-  - Ana Klinik UUID: aa901066-67ca-4a6a-8d8b-e5784fb36e57
-  - **Sonraki adım:** Modül 2 (Frontend) veya Modül 3 (Tedavi Protokolü)
+  - Backend: /var/www/diavera-backend — PM2 ile çalışıyor ✅
+  - Frontend: /var/www/diavera-frontend — Vite+React kurulu ✅
+  - Admin: admin@diavera.com.tr | Ana Klinik UUID: aa901066-67ca-4a6a-8d8b-e5784fb36e57
+  - Modül 1 (Hasta CRUD) ✅ | Modül 1.5 (Lab Import) ✅
+  - **Sonraki adım: Modül 2 — Login sayfası (Frontend)**
 
 - **Konum App** → arca-workspace: projeler/konum_app/PROJE.md
 - **Okçuluk Sitesi (Raderok)** → arca-workspace: projeler/okculuk/PROJE.md
